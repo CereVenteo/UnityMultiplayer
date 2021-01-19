@@ -10,6 +10,9 @@ public class CreateNewRoom : MonoBehaviourPunCallbacks
     [SerializeField]
     private Text roomname;
 
+    [SerializeField]
+    public GameObject UI_Manager;
+
     public void OnClick_CreateRoom()
     {
         if (!PhotonNetwork.IsConnected)
@@ -19,6 +22,9 @@ public class CreateNewRoom : MonoBehaviourPunCallbacks
         options.MaxPlayers = 10;
 
         PhotonNetwork.JoinOrCreateRoom(roomname.text, options, TypedLobby.Default);
+
+        UI_Manager.GetComponent<UIintroManager>().ActiveCanvas(UI_Manager.GetComponent<UIintroManager>().Lobby_c);
+
     }
 
     public override void OnCreatedRoom()

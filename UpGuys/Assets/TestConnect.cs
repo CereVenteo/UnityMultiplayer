@@ -17,6 +17,7 @@ public class TestConnect : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         print("Connected To Server");
+        PhotonNetwork.JoinLobby();
     }
     
 }
