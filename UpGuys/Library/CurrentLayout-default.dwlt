@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 60
+  controlID: 107
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 61
+  controlID: 108
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Standard Assets/Utility
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Standard Assets/Utility
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\UnityMultiplayer\UpGuys
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 16}
-    m_SelectedIDs: 1a400000
-    m_LastClickedID: 16410
-    m_ExpandedIDs: 00000000fe3f00000040000002400000064000000840000016400000ac6f0000c66f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 88480000
+    m_LastClickedID: 18568
+    m_ExpandedIDs: 00000000f63f0000f83f0000fa3f0000fc3f0000fe3f000004400000144000001840000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe3f00000040000002400000044000000640000008400000
+    m_ExpandedIDs: 00000000f63f0000f83f0000fa3f0000fc3f0000fe3f0000004000000240000004400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 102
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -481,9 +481,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 569c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: ecd5ffffcaf7ffff44f9ffff
+      m_SelectedIDs: 52fbffff
+      m_LastClickedID: -1198
+      m_ExpandedIDs: 3afbffff56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -26.271055, y: -18.056875, z: 18.249435}
+    m_Target: {x: -24.114613, y: -13.124908, z: 24.907743}
     speed: 2
-    m_Value: {x: -26.271055, y: -18.056875, z: 18.249435}
+    m_Value: {x: -24.114613, y: -13.124908, z: 24.907743}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -592,13 +592,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.23832487, y: -0.4520394, z: 0.12671363, w: 0.8501672}
+    m_Target: {x: 0.18709551, y: -0.37877768, z: 0.07848, w: 0.9029615}
     speed: 2
-    m_Value: {x: 0.23832737, y: -0.45204413, z: 0.12671496, w: 0.85017616}
+    m_Value: {x: 0.18709777, y: -0.37878227, z: 0.078480944, w: 0.9029724}
   m_Size:
-    m_Target: 30.477016
+    m_Target: 27.949179
     speed: 2
-    m_Value: 31.913107
+    m_Value: 27.949179
   m_Ortho:
     m_Target: 0
     speed: 2
