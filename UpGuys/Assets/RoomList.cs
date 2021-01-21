@@ -9,9 +9,12 @@ public class RoomList : MonoBehaviourPunCallbacks
     [SerializeField]
     private Transform content;
     [SerializeField]
-    private RoomListing room;
+    private RoomTile room;
 
-    private List<RoomListing> roomsactive = new List<RoomListing>();
+    [SerializeField]
+    public GameObject UImanager;
+
+    private List<RoomTile> roomsactive = new List<RoomTile>();
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
@@ -21,7 +24,7 @@ public class RoomList : MonoBehaviourPunCallbacks
             if (info.RemovedFromList)
             {
                 int index = -1;
-                foreach (RoomListing Room in roomsactive)
+                foreach (RoomTile Room in roomsactive)
                 {
                     if (Room.roomInfo.Name == info.Name)
                     {
@@ -43,10 +46,10 @@ public class RoomList : MonoBehaviourPunCallbacks
             else
             {
                 // Aqui es si se esta creando
-                RoomListing listing = Instantiate(room, content);
+                RoomTile listing = Instantiate(room, content);
                 if (listing != null)
                 {
-                    listing.SetRoomInfo(info);
+                    listing.SetRoomInfo(info,UImanager);
                     roomsactive.Add(listing);
                 }
             }

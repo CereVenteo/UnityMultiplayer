@@ -205,6 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166698233}
+  - component: {fileID: 166698234}
   m_Layer: 0
   m_Name: PlayersList
   m_TagString: Untagged
@@ -232,6 +233,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &166698234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166698232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7f4ba9135b0d341bc5c71ac1dd5afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 1020391867}
+  playerT: {fileID: 6443314837015833999, guid: 9035956dae258a04787fa26af0a7517b, type: 3}
 --- !u!1 &312060749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreateJoin_c: {fileID: 421805773}
   Lobby_c: {fileID: 1175305444}
+  justStarted: {fileID: 166698232}
 --- !u!1 &1624335944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,7 +2622,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 77, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787836929
@@ -2657,7 +2673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 73, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812468303
@@ -2674,6 +2690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: {fileID: 657658204}
   room: {fileID: 2562204862387238309, guid: 21694fe640d5e354c9807854f343a879, type: 3}
+  UImanager: {fileID: 1575055923}
 --- !u!1 &2019320534
 GameObject:
   m_ObjectHideFlags: 0

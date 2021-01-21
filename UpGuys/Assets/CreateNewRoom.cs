@@ -22,19 +22,19 @@ public class CreateNewRoom : MonoBehaviourPunCallbacks
         options.MaxPlayers = 10;
 
         PhotonNetwork.JoinOrCreateRoom(roomname.text, options, TypedLobby.Default);
-
-        UI_Manager.GetComponent<UIintroManager>().ActiveCanvas(UI_Manager.GetComponent<UIintroManager>().Lobby_c);
-
     }
 
     public override void OnCreatedRoom()
     {
         print("Room " + roomname + " created succesfully.");
+        UI_Manager.GetComponent<UIintroManager>().ActiveCanvas(UI_Manager.GetComponent<UIintroManager>().Lobby_c);
+        UI_Manager.GetComponent<UIintroManager>().JustAwaked();
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         print("Room " + roomname + " creation failed by" + message);
     }
+
 
 }

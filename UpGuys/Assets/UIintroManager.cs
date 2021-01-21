@@ -9,6 +9,11 @@ public class UIintroManager : MonoBehaviour
     [SerializeField]
     public Canvas Lobby_c;
 
+    [SerializeField]
+    public GameObject justStarted;
+
+
+
     private List<Canvas> MyUIcanvas = new List<Canvas>();
     private void Start()
     {
@@ -36,5 +41,11 @@ public class UIintroManager : MonoBehaviour
                 canvas.gameObject.SetActive(false);
             }
         }
+    }
+
+
+    public void JustAwaked()
+    {
+        justStarted.GetComponent<PlayerList>().justIenter();
     }
 }
