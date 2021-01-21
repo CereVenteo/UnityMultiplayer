@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - PlayerTile
     - RoomList
     - RoomTile
+    - RoomTitle
     - TestConnect
     - UIintroManager
     PhotonUnityNetworking.Demos.dll:
@@ -91,79 +92,81 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1476}
     - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
       Script: {instanceID: 1482}
     - Class: 114
-      Script: {instanceID: 1484}
+      Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1664}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1700}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1738}
+      Script: {instanceID: 1756}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1866}
     - Class: 114
-      Script: {instanceID: 1968}
+      Script: {instanceID: 2042}
     - Class: 114
-      Script: {instanceID: 2144}
+      Script: {instanceID: 2270}
     - Class: 114
-      Script: {instanceID: 2368}
+      Script: {instanceID: 2398}
     - Class: 114
-      Script: {instanceID: 2492}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2516}
+      Script: {instanceID: 2548}
     - Class: 114
-      Script: {instanceID: 2642}
+      Script: {instanceID: 2556}
     - Class: 114
-      Script: {instanceID: 2650}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2638}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2754}
+      Script: {instanceID: 2830}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 2976}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 3028}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3294}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 3534}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3562}
+      Script: {instanceID: 3442}
     - Class: 114
-      Script: {instanceID: 3642}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3746}
+      Script: {instanceID: 3550}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 3926}
+      Script: {instanceID: 3678}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 3708}
     - Class: 114
-      Script: {instanceID: 3944}
+      Script: {instanceID: 3838}
     - Class: 114
-      Script: {instanceID: 3948}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4236}
+      Script: {instanceID: 3856}
     - Class: 114
-      Script: {instanceID: 17872}
+      Script: {instanceID: 3860}
     - Class: 114
-      Script: {instanceID: 17874}
+      Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 17876}
+      Script: {instanceID: 17604}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,12 +204,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: 134322c9293c1896357cce271b819ce4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
@@ -683,6 +680,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 134322c9293c1896357cce271b819ce4
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1157,6 +1160,12 @@ ScriptsOnlyBuild:
     className: ConnectionHandler
   - hash:
       serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerTile
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1251,6 +1260,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonRigidbody2DView
+  - hash:
+      serializedVersion: 2
+      Hash: 9466d2d883805bc8c49e9e1735301f6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerList
   - hash:
       serializedVersion: 2
       Hash: f0c4eb24258257daca58a9939f0894d2
@@ -1455,6 +1470,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
     className: SplinePosition
+  - hash:
+      serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomTile
   - hash:
       serializedVersion: 2
       Hash: 5e8a01a14cef8c5fb6866e39e13545df
@@ -1715,22 +1736,10 @@ ScriptsOnlyBuild:
     className: FPSCounter
   - hash:
       serializedVersion: 2
-      Hash: 4ce15e99c635d2567873d27549d1f16f
+      Hash: 51b22fdd1e326e72bcaa63aafa7e1f46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RoomTile
-  - hash:
-      serializedVersion: 2
-      Hash: 9466d2d883805bc8c49e9e1735301f6d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerList
-  - hash:
-      serializedVersion: 2
-      Hash: 4ce15e99c635d2567873d27549d1f16f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerTile
+    className: RoomTitle
   platform: 5
   scenePathNames:
   - Assets/Scenes/UINetworkConnection.unity
