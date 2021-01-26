@@ -9,6 +9,7 @@ public class TestConnect : MonoBehaviourPunCallbacks
     void Start()
     {
         print("Connecting To Server");
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.GameVersion = "0.0.1";
         PhotonNetwork.ConnectUsingSettings();
     }
