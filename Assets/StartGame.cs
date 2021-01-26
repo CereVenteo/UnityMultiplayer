@@ -1,0 +1,15 @@
+using Photon.Pun;
+using Photon.Realtime;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+public class StartGame : MonoBehaviourPunCallbacks
+{
+    public void OnClick_startgame()
+    {
+        PhotonNetwork.LoadLevel(1);
+    }
+}
