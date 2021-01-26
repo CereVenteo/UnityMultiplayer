@@ -5,9 +5,8 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
 
-    public float speed_x = 6.0f;
     public float speed_y = 0.0f;
-    public float speed_z = 6.0f;
+    float speed_z = 3.5f;
     CharacterController controller;
 
     Vector2 input;
@@ -15,8 +14,8 @@ public class CharacterMovement : MonoBehaviour
     Camera my_camera;
 
     public bool is_grounded = false;
-    public float gravity = 9.8f;
-    public float jump_speed = 20.0f;
+    float gravity = 20.0f;
+    float jump_speed = 11.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -35,17 +34,9 @@ public class CharacterMovement : MonoBehaviour
         input.y = Input.GetAxis("Vertical");
 
 
-        if (input.y != 0)
-        {
-            float finalSpeedY = input.y >= 0.01f ? speed_z : 0.0f;
-            controller.Move(transform.forward * finalSpeedY * Time.deltaTime);
-        }
-
-        if (input.x != 0)
-        {
-            float finalSpeedX = input.x >= 0.01f ? speed_x : -speed_x;
-            controller.Move(transform.right * finalSpeedX * Time.deltaTime);
-        }
+        float finalSpeedY = speed_z;
+        controller.Move(transform.forward * finalSpeedY * Time.deltaTime);
+        
 
         if(!is_grounded)
         {
