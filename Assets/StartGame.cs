@@ -10,6 +10,7 @@ public class StartGame : MonoBehaviourPunCallbacks
 {
     public void OnClick_startgame()
     {
-        PhotonNetwork.LoadLevel(1);
+        if (PhotonNetwork.IsMasterClient)
+            PhotonNetwork.LoadLevel(1);
     }
 }
