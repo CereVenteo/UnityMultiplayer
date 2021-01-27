@@ -1,9 +1,13 @@
+using Photon.Pun;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : MonoBehaviourPunCallbacks
 {
+    private GameObject my_cam;
 
     public float speed_y = 0.0f;
     float speed_z = 3.5f;
@@ -20,19 +24,29 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = gameObject.GetComponent<CharacterController>();
-        my_camera = Camera.main;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        
+        print("aunque cueste un poco creer el motivo");
+        if (this.gameObject.GetComponent<PhotonView>().IsMine)
+        {
+            print("estamos aqui reunidos");
+            controller = gameObject.GetComponent<CharacterController>();
+            my_camera = Camera.main;
+            my_cam = GameObject.Find("MoveCamera");
+
+            my_cam.GetComponent<CinemachineFreeLook>().Follow = this.gameObject.transform;
+            my_cam.GetComponent<CinemachineFreeLook>().LookAt = this.transform.GetChild(5);
+
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxis("Vertical");
+        //input.x = Input.GetAxis("Horizontal");
+        //input.y = Input.GetAxis("Vertical");
 
+        //gg cuidao;
 
         float finalSpeedY = speed_z;
         controller.Move(transform.forward * finalSpeedY * Time.deltaTime);
