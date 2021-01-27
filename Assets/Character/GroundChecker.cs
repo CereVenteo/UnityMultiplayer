@@ -21,7 +21,7 @@ public class GroundChecker : MonoBehaviourPunCallbacks, IPunObservable
         {
             // Network player, receive data
             if (!heganao)
-            this.hanganao = (bool)stream.ReceiveNext();
+                this.hanganao = (bool)stream.ReceiveNext();
         }
     }
 
@@ -68,6 +68,7 @@ public class GroundChecker : MonoBehaviourPunCallbacks, IPunObservable
         if (hanganao && !heganao)
         {
             lose_canvas.SetActive(true);
+            win_canvas.SetActive(false);
             print("he perdio");
         }
     }
@@ -85,6 +86,7 @@ public class GroundChecker : MonoBehaviourPunCallbacks, IPunObservable
             print("he ganao");
             heganao = true;
             win_canvas.SetActive(true);
+            lose_canvas.SetActive(false);
         }
     }
 
